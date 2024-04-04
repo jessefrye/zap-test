@@ -23,7 +23,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           target: 'https://jesse-testing.com'
           docker_name: 'softwaresecurityproject/zap-stable'
-          cmd_options: '-j -n localtest.context'
+          cmd_options: '-n localtest.context'
           fail_action: false
           artifact_name: 'zap scan test'
           issue_title: 'zaproxy scanner'
