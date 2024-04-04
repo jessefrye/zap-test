@@ -4,9 +4,9 @@
         <name>Default Context</name>
         <desc/>
         <inscope>true</inscope>
-        <incregexes>fakersite.*</incregexes>
+        <incregexes>testphp.vulnweb.com*</incregexes>
+        <incregexes>fakersite.com*</incregexes>
         <incregexes>example.*</incregexes>
-        <incregexes>testphp.vulnweb.*</incregexes>
         <incregexes>demo.testfire.*</incregexes>
         <incregexes>brokencrystals.*</incregexes>
         <tech>
