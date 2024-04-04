@@ -17,6 +17,6 @@ jobs:
         with:
           ref: main
       - name: MZAP Env
-        uses: hahwul/mzap@v1.2.0
+        uses: hahwul/mzap@v1.3.1
         with:
-          arguments: '--urls urls.txt'
+          arguments: 'spider --urls urls.txt'
