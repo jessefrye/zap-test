@@ -22,6 +22,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           target: 'https://jesse-testing.com'
           docker_name: 'softwaresecurityproject/zap-stable'
-          cmd_options: '-j -U test1 -n localtest.context'
+          cmd_options: '-j -n localtest.context'
           fail_action: false
           # rules_file_name: '.zap/rules.tsv'

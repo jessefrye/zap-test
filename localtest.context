@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <configuration>
     <context>
-        <name>localtest</name>
+        <name>baseline</name>
         <desc/>
         <inscope>true</inscope>
-        <incregexes>\Qfakersite.com\E</incregexes>
-        <incregexes>example.com*</incregexes>
-        <incregexes>\Qtestphp.vulnweb.com.*</incregexes>
-        <incregexes>\Qdemo.testfire.net.*</incregexes>
-        <incregexes>\Qbrokencrystals.com.*</incregexes>
+        <incregexes>fakersite.*</incregexes>
+        <incregexes>example.*</incregexes>
+        <incregexes>testphp.vulnweb.*</incregexes>
+        <incregexes>demo.testfire.*</incregexes>
+        <incregexes>brokencrystals.*</incregexes>
         <tech>
             <include>Db</include>
             <include>Db.CouchDB</include>
@@ -64,10 +64,7 @@
             <pollfreq>60</pollfreq>
             <pollunits>REQUESTS</pollunits>
         </authentication>
-        <users>
-            <user>3740;true;dGVzdDE=;5;Zm1oZW5uaUBvdmljZS5jbw==~RmlyYXNmbGFzaHE1~</user>
-        </users>
-        <forceduser>3740</forceduser>
+        <forceduser>-1</forceduser>
         <session>
             <type>0</type>
         </session>
