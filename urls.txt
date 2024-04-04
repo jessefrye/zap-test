@@ -1,7 +1,9 @@
-http://fakersite.com
-https://example.com
-http://testphp.vulnweb.com/
-http://demo.testfire.net/
-https://authlab.digi.ninja/
-https://brokencrystals.com/
-https://ginandjuice.shop/
+http://testphp.vulnweb.com
+https://www.hahwul.com
+https://owasp.org
+https://www.zaproxy.org
+https://portswigger.net
+https://www.hackerone.com
+https://www.bugcrowd.com
+https://dalfox.hahwul.com
+https://authz0.hahwul.com
