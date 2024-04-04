@@ -19,4 +19,4 @@ jobs:
       - name: MZAP Env
         uses: hahwul/mzap@v1.2.0
         with:
-          arguments: 'spider --urls urls.txt --apis'
+          arguments: 'spider --urls urls.txt'
