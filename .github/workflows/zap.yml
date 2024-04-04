@@ -2,6 +2,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   zap_scan:
@@ -17,11 +18,13 @@ jobs:
           ref: main
           
       - name: ZAP Scan
-        uses: zaproxy/action-baseline
+        uses: zaproxy/action-baseline@v0.8.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           target: 'https://jesse-testing.com'
           docker_name: 'softwaresecurityproject/zap-stable'
           cmd_options: '-j -n localtest.context'
           fail_action: false
+          artifact_name: 'zap scan test'
+          issue_title: 'zaproxy scanner'
           # rules_file_name: '.zap/rules.tsv'
