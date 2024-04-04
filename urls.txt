@@ -1,0 +1,7 @@
+http://fakersite.com
+https://example.com
+http://testphp.vulnweb.com/
+http://demo.testfire.net/
+https://authlab.digi.ninja/
+https://brokencrystals.com/
+https://ginandjuice.shop/
