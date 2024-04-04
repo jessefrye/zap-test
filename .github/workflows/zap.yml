@@ -2,7 +2,13 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
+  workflow_call:
+    inputs:
+      target:
+        description: 'the base url to target'
+        default: 'http://localhost:3000'
+        required: false
+        type: string
 
 jobs:
   zap_scan:
@@ -12,11 +18,5 @@ jobs:
     runs-on: ubuntu-latest
     name: Scan the web application
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          ref: main
-      - name: MZAP Env
-        uses: hahwul/mzap@v1.3.0-action
-        with:
-          arguments: 'spider --urls urls.txt'
+      - name: Print the input target to STDOUT
+        run: echo The username is ${{ inputs.target }}
