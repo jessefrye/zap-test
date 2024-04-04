@@ -4,13 +4,11 @@
         <name>localtest</name>
         <desc/>
         <inscope>true</inscope>
-        <incregexes>http://fakersite.com</incregexes>
+        <incregexes>https://fakersite.com</incregexes>
         <incregexes>https://example.com</incregexes>
-        <incregexes>http://testphp.vulnweb.com/</incregexes>
-        <incregexes>http://demo.testfire.net/</incregexes>
-        <incregexes>https://authlab.digi.ninja/</incregexes>
+        <incregexes>https://testphp.vulnweb.com/</incregexes>
+        <incregexes>https://demo.testfire.net/</incregexes>
         <incregexes>https://brokencrystals.com/</incregexes>
-        <incregexes>https://ginandjuice.shop/</incregexes>
         <tech>
             <include>Db</include>
             <include>Db.CouchDB</include>
