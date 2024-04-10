@@ -1,4 +1,4 @@
-on: 
+on:
   push:
     branches:
       - main
@@ -14,7 +14,7 @@ jobs:
           - http://testphp.vulnweb.com
           - https://www.hahwul.com
           - https://owasp.org
-          - https://www.zaproxy.org    
+          - https://www.zaproxy.org
     runs-on: ubuntu-latest
     name: Scan the web application
     steps:
@@ -23,12 +23,12 @@ jobs:
         with:
           ref: main
       - name: ZAP Scan
-        uses: zaproxy/action-baseline@v0.12.0
+        uses: zaproxy/action-baseline@v0.11.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          docker_name: 'ghcr.io/zaproxy/zaproxy:stable'
+          docker_name: "ghcr.io/zaproxy/zaproxy:stable"
           target: ${{ matrix.target }}
-          issue_title: 'ZAP Baseline Scan'
+          issue_title: "ZAP Baseline Scan"
           fail_action: false
           # rules_file_name: '.z  ap/gen.conf'
-          cmd_options: '-a'
+          cmd_options: "-a"
