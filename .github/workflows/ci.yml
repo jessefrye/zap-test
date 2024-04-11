@@ -31,7 +31,7 @@ jobs:
           rules_file_name: '.zap/gen.conf'
           cmd_options: '--user root'
       - name: Checking...
-          run: ls -
+          run: chmod -R 755 /zap/wrk/; ls -la; 
 
 
 
