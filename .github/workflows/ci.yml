@@ -15,7 +15,7 @@ jobs:
           - https://www.hahwul.com
           - https://owasp.org
           - https://www.zaproxy.org    
-    runs-on: windows-latest
+    runs-on: macOS-latest
     name: Scan the web application
     steps:
       - name: Checkout
